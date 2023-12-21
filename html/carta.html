@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final Curso Front End</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../JS/carta.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/carta.css">
+</head>
+
+<body>
+  <header id="header">
+    <!--TOGGLER-->
+    <div class="navbar-offcanvas">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html"><svg width="100px" id="Capa_1" data-name="Capa 1"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264.84 47.77">
+            <defs>
+              <style>
+                .cls-1 {
+                  stroke: #000;
+                  stroke-miterlimit: 10;
+                }
+
+                .cls-2 {
+                  fill: #e30613;
+                }
+              </style>
+            </defs>
+            <title>LOGO</title>
+            <circle class="cls-1" cx="23.55" cy="23.86" r="22.85" />
+            <rect class="cls-1" x="253.49" y="1.01" width="10.55" height="10.55"
+              transform="translate(252.48 265.05) rotate(-90)" />
+            <rect class="cls-1" x="244.49" y="27.16" width="28.56" height="10.55"
+              transform="translate(226.33 291.21) rotate(-90)" />
+            <path class="cls-1"
+              d="M76.77,46.71H55.68V36.17H76.77q7,0,7-7H55.68V18.59Q55.68,1,73.25,1h21.1V11.56H73.25q-7,0-7,7H94.35V29.14Q94.35,46.72,76.77,46.71Z" />
+            <path class="cls-1"
+              d="M174.66,46.71H153.57V36.17h21.09q7,0,7-7H153.57V18.59Q153.57,1,171.15,1h21.09V11.56H171.15q-7,0-7,7h28.12V29.14Q192.24,46.72,174.66,46.71Z" />
+            <polygon class="cls-1"
+              points="213.82 18.59 213.82 16.63 213.82 1.01 203.27 1.01 203.27 18.59 203.27 29.14 203.27 46.72 213.82 46.72 213.82 37.93 231.39 37.93 231.39 46.72 241.94 46.72 241.94 1.01 231.39 1.01 231.39 16.63 231.39 18.59 231.39 27.38 213.82 27.38 213.82 18.59" />
+            <path class="cls-1" d="M133,46.89h12V1H133V46.89Z" />
+            <path class="cls-1"
+              d="M119.88,32.14c-3.77-4.66-4.25-19.09-4.25-31.13h-12c0,22,1.87,32.43,6.92,38.68,4.17,5.15,10,7.25,16.65,7.25L127,34.62C123,34.3,121.08,33.62,119.88,32.14Z" />
+            <circle class="cls-2" cx="23.55" cy="23.86" r="12.3" />
+          </svg></a>
+        <button id="open-menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
+            class="navbar-toggler-icon"></span></button>
+      </div>
+    </div>
+    <!--OFFCANVAS-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+      <div class="offcanvas-header">
+        <button id="close-menu" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="contenedor-enlaces-offcanvas">
+          <a class="enlace-offcanvas" href="inicio.html">Inicio</a>
+          <a class="enlace-offcanvas" href="especialidades.html">Especialidades</a>
+          <a class="enlace-offcanvas" href="carta.html">Carta</a>
+          <a class="enlace-offcanvas" href="menus.html">Menús</a>
+          <a class="enlace-offcanvas" href="reserva.html">Reservas</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+
+      <div class="background-carta flex-row">
+        <div class="col-md-12" id="div-titulo-pagina">
+          <h1 id="seccion">Carta</h1>
+          <p id="caption">Averigua cuáles se convertirán en tus "must-have" de Osushi</p>
+          <p id="caption2">(Y pídelos también desde casa)</p>
+        </div>
+      </div>
+
+      <div class="white-background row">
+
+        <div class="col-lg-9 col-md-12 espacio-card">
+
+          <div class="row primera-fila">
+
+            <!--Yakitori-->
+            <div class="card col-lg-3 col-md-4 card1">
+              <img src="../media/img/carta/comida/yakitori.jpg" class="card-img-top" alt="yakitori">
+              <div class="card-body">
+                <h5 class="card-title">Yakitori (4 ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Yakitori pollo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">8€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador1">
+                      <button type="button" class="btn-yakitori-1 btn-card boton-agregar1">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Yakitori cerdo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">8€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador11">
+                      <button type="button" class="btn-yakitori-11 btn-card boton-agregar11">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Yakitori ternera</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">8€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador12">
+                      <button type="button" class="btn-yakitori-12 btn-card boton-agregar12">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Yakitori-->
+
+            <!--Sushi-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/sushi.jpg" class="card-img-top" alt="sushi">
+              <div class="card-body">
+                <h5 class="card-title">Sushi (8 ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Salmón y queso</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador2">
+                      <button type="button" class="btn-sushi-2 btn-card boton-agregar2">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Atún y aguacate</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador21">
+                      <button type="button" class="btn-sushi-21 btn-card boton-agregar21">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Queso y pepino</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador22">
+                      <button type="button" class="btn-sushi-22 btn-card boton-agregar22">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Sushi-->
+
+            <!--Maki-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/maki.jpg" class="card-img-top" alt="maki">
+              <div class="card-body">
+                <h5 class="card-title">Maki (8 ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Pez mantequilla</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador3">
+                      <button type="button" class="btn-maki-3 btn-card boton-agregar3">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Queso y mango</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador31">
+                      <button type="button" class="btn-maki-31 btn-card boton-agregar31">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Salmón y pepino</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador32">
+                      <button type="button" class="btn-maki-32 btn-card boton-agregar32">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Maki-->
+          </div>
+
+          <div class="row segunda-fila">
+
+            <!--Uramaki-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/uramaki.jpg" class="card-img-top" alt="uramaki">
+              <div class="card-body">
+                <h5 class="card-title">Uramaki (8 ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Queso de cabra</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador4">
+                      <button type="button" class="btn-uramaki-4 btn-card boton-agregar4">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Mango y pollo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador41">
+                      <button type="button" class="btn-uramaki-41 btn-card boton-agregar41">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Aguacate y atún</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador42">
+                      <button type="button" class="btn-uramaki-42 btn-card boton-agregar42">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Uramaki-->
+
+            <!--Nigiri-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/nigiri.jpg" class="card-img-top" alt="nigiri">
+              <div class="card-body">
+                <h5 class="card-title">Nigiri (4 ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Salmón y aguacate</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador5">
+                      <button type="button" class="btn-nigiri-5 btn-card boton-agregar5">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Pez mantequilla</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador51">
+                      <button type="button" class="btn-nigiri-51 btn-card boton-agregar51">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Atún rojo (almadraba)</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador52">
+                      <button type="button" class="btn-nigiri-52 btn-card boton-agregar52">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Nigiri-->
+
+            <!--Gyozas-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/gyoza.jpg" class="card-img-top" alt="gyoza">
+              <div class="card-body">
+                <h5 class="card-title">Gyozas (4 ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Gyozas pollo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">6€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador6">
+                      <button type="button" class="btn-gyozas-6 btn-card boton-agregar6">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Gyozas ternera</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">6€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador61">
+                      <button type="button" class="btn-gyozas-61 btn-card boton-agregar61">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Gyozas verduras</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">6€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador62">
+                      <button type="button" class="btn-gyozas-62 btn-card boton-agregar62">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Gyozas-->
+
+          </div>
+
+
+          <div class="row tercera-fila">
+
+            <!--Noodles-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/noodles.jpg" class="card-img-top" alt="noodles">
+              <div class="card-body">
+                <h5 class="card-title">Noodles</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Yakisoba vegetal</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador7">
+                      <button type="button" class="btn-noodles-7 btn-card boton-agregar7">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Udón de pollo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador71">
+                      <button type="button" class="btn-noodles-71 btn-card boton-agregar71">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Udón de ternera</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">10€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador72">
+                      <button type="button" class="btn-noodles-72 btn-card boton-agregar72">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Noodles-->
+
+            <!--Arroz-->
+            <div class="card col-lg-3 col-md-4">
+              <img src="../media/img/carta/comida/arroz.jpg" class="card-img-top" alt="arroz">
+              <div class="card-body">
+                <h5 class="card-title">Arroz</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Arroz natural</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">5€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador8">
+                      <button type="button" class="btn-arroz-8 btn-card boton-agregar8">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Katsudon de cerdo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">8€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador81">
+                      <button type="button" class="btn-arroz-81 btn-card boton-agregar81">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Katsudon de pollo</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">8€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador82">
+                      <button type="button" class="btn-arroz-82 btn-card boton-agregar82">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Arroz-->
+
+            <!--Postres-->
+            <div class="card col-lg-3 col-md-4 card9">
+              <img src="../media/img/carta/comida/mochi.jpg" class="card-img-top" alt="mochi">
+              <div class="card-body">
+                <h5 class="card-title">Mochis (2ud)</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Mochi de mango</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">6€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador9">
+                      <button type="button" class="btn-mochi-9 btn-card boton-agregar9">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Mochi de chocolate</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">6€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador91">
+                      <button type="button" class="btn-mochi-91 btn-card boton-agregar91">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="flex-espaciado">
+                    <div class="producto">
+                      <p class="parrafo">Mochi de fresa</p>
+                    </div>
+                    <div class="precio">
+                      <p class="parrafo">6€</p>
+                    </div>
+                    <div class="flex-espaciado" id="contador92">
+                      <button type="button" class="btn-mochi-92 btn-card boton-agregar92">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--Postres-->
+          </div>
+        </div>
+
+        <div class="col-lg-3 div-carrito" id="contenedor-scroll">
+          <div class="pedido">
+            <h4 class="tu-pedido">TU PEDIDO</h4>
+            <p class="pedido-minimo">Pedido mínimo de 20 €</p>
+          </div>
+
+          <hr>
+          <!--Este apartado sólo aparece tras confirmar el pedido-->
+          <div class="carrito" id="carrito">
+            <div class="alert alert-success oculto" role="alert">
+              <h4 class="alert-title">Su pedido ha sido realizado!</h4>
+              <p class="datos-pedido-titulo">Datos del pedido:</p>
+              <hr>
+              <p class="datos-pedido"></p>
+              <p class="precio-pedido"></p>
+            </div>
+          </div>
+          <!--Este apartado sólo aparece tras confirmar el pedido-->
+          <hr>
+
+          <div class="div-total" id="div-total">
+            <p class="palabra-total">TOTAL:</p>
+            <p class="parrafo-total"></p>
+          </div>
+          <div class="div-boton-pedido" id="div-boton-pedido">
+            <button class="boton-pedido" type="button">CONFIRMAR PEDIDO</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Botón flotante para pantallas más pequeñas-->
+    <div class="div-btn-flotante">
+      <button class="btn-flotante boton-pedido oculto"></button>
+    </div>
+  </main>
+
+  <footer id="#footer">
+    <div class="text-center text-lg-start text-muted container-fluid seccionfoot">
+      <div
+        class="seccionfoot2 d-flex justify-content-center align-items-center justify-content-lg-between p-4 border-bottom">
+        <!-- Izquierda-->
+        <div class="me-5 d-none d-lg-block contactame-div">
+          <a href="reserva.html" target="_blank" class="reserva enlace">¡ RESERVA !</a>
+        </div>
+        <!-- Izquierda -->
+
+       <!-- Derecha -->
+       <div>
+        <a class="me-4 text-reset enlace" href="https://www.linkedin.com/in/roc%C3%ADo-finch-gonz%C3%A1lez" 
+          title="Linkedin" target="_blank"> <img class="icon" src="../media/img/index/LINKEDIN.png" alt="linkedin-icon"></a>
+        <a class="me-4 text-reset enlace" href="https://www.instagram.com/rocio.finch/" title="Instagram"
+          target="_blank"> <img class="icon" src="../media/img/index/IG.png" alt="ig-icon" title="Instagram"></a>
+        <a class="me-4 text-reset enlace" href="https://www.pinterest.es/RocioFinch/" title="Pinterest"
+          target="_blank"> <img class="icon" src="../media/img/index/PINTEREST.png" alt="pinterest-icon"
+            title="Pinterest"></a>
+      </div>
+      <!-- Derecha -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

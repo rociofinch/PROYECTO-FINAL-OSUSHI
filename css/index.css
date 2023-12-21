@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+#header {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../media/img/index/toggle.png);
+    width: 1.75em;
+    height: 1.75em;
+}
+
+.navbar>.container-fluid {
+    justify-content: flex-end;
+}
+
+.navbar-offcanvas {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-offcanvas>.container-fluid {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.offcanvas {
+    width: 300px;
+}
+
+.offcanvas-header {
+    justify-content: right;
+}
+
+.offcanvas-body {
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contenedor-enlaces-offcanvas {
+    text-align: right;
+}
+
+.enlace-offcanvas {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+}
+
+.enlace-offcanvas:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.activo {
+    color: red;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.enlace {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-weight: bolder;
+}
+
+.enlace:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.enlace:active {
+    color: red;
+}
+
+.icon {
+    width: 30px;
+}
+
+.seccionfoot {
+    border-top: 1px solid black;
+}
+
+.seccionfoot2 {
+    height: 60px;
+}
+
+.reserva{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  
+    #header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .icon {
+        width: 20px;
+    }
+
+    #header {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

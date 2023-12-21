@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final Curso Front End</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="../JS/menus.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/menus.css">
+</head>
+
+<body>
+  <header id="header">
+    <!--TOGGLER-->
+    <div class="navbar-offcanvas">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html"><svg width="100px" id="Capa_1" data-name="Capa 1"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264.84 47.77">
+            <defs>
+              <style>
+                .cls-1 {
+                  stroke: #000;
+                  stroke-miterlimit: 10;
+                }
+
+                .cls-2 {
+                  fill: #e30613;
+                }
+              </style>
+            </defs>
+            <title>LOGO</title>
+            <circle class="cls-1" cx="23.55" cy="23.86" r="22.85" />
+            <rect class="cls-1" x="253.49" y="1.01" width="10.55" height="10.55"
+              transform="translate(252.48 265.05) rotate(-90)" />
+            <rect class="cls-1" x="244.49" y="27.16" width="28.56" height="10.55"
+              transform="translate(226.33 291.21) rotate(-90)" />
+            <path class="cls-1"
+              d="M76.77,46.71H55.68V36.17H76.77q7,0,7-7H55.68V18.59Q55.68,1,73.25,1h21.1V11.56H73.25q-7,0-7,7H94.35V29.14Q94.35,46.72,76.77,46.71Z" />
+            <path class="cls-1"
+              d="M174.66,46.71H153.57V36.17h21.09q7,0,7-7H153.57V18.59Q153.57,1,171.15,1h21.09V11.56H171.15q-7,0-7,7h28.12V29.14Q192.24,46.72,174.66,46.71Z" />
+            <polygon class="cls-1"
+              points="213.82 18.59 213.82 16.63 213.82 1.01 203.27 1.01 203.27 18.59 203.27 29.14 203.27 46.72 213.82 46.72 213.82 37.93 231.39 37.93 231.39 46.72 241.94 46.72 241.94 1.01 231.39 1.01 231.39 16.63 231.39 18.59 231.39 27.38 213.82 27.38 213.82 18.59" />
+            <path class="cls-1" d="M133,46.89h12V1H133V46.89Z" />
+            <path class="cls-1"
+              d="M119.88,32.14c-3.77-4.66-4.25-19.09-4.25-31.13h-12c0,22,1.87,32.43,6.92,38.68,4.17,5.15,10,7.25,16.65,7.25L127,34.62C123,34.3,121.08,33.62,119.88,32.14Z" />
+            <circle class="cls-2" cx="23.55" cy="23.86" r="12.3" />
+          </svg></a>
+        <button id="open-menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
+            class="navbar-toggler-icon"></span></button>
+      </div>
+    </div>
+    <!--OFFCANVAS-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+      <div class="offcanvas-header">
+        <button id="close-menu" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="contenedor-enlaces-offcanvas">
+          <a class="enlace-offcanvas" href="inicio.html">Inicio</a> 
+          <a class="enlace-offcanvas" href="especialidades.html">Especialidades</a>
+          <a class="enlace-offcanvas" href="carta.html">Carta</a>
+          <a class="enlace-offcanvas" href="menus.html">Menús</a>
+          <a class="enlace-offcanvas" href="reserva.html">Reservas</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+
+      <div class="background-menus flex-row">
+        <div class="col-md-12" id="div-titulo-pagina">
+          <h1 id="seccion">Menús para grupos</h1>
+          <p id="caption">Siempre es mejor venir acompañado de amigos</p>
+        </div>
+      </div>
+
+      <div class="white-background row">
+        
+        <div class="accordion col-md-12" id="accordionExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Menú Individual
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="menu-body">
+                <h3 class="titulo-menu titulo">Menú Individual</h3>
+                <h4 class="titulo-submenu submenu">Entrantes</h4>
+                <h6>Gyozas de verduras</h6>
+                <h6>Yakitori de ternera</h6>
+                <h4 class="titulo-submenu submenu">Principal</h4>
+                <h6>Sushi de atún y aguacate (4 ud)</h6>
+                <h6>Yakisoba vegetal / Katsudon de pollo</h6>
+                <h4 class="titulo-submenu submenu">Postre</h4>
+                <h6>Mochi de mango con nata</h6>
+                <h5 class="precio-menu">45.00€</h5>
+                <p class="iva">IVA INCLUIDO</p>
+                <p class="bebida-incluida">BEBIDA INCLUIDA DURANTE LA COMIDA</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Menú Cocktail
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="menu-body">
+                <h3 class="titulo-menu-no-margen titulo">Menú Cocktail</h3>
+                <p class="subtitulo">Al centro para compartir</p>
+                <h6>Gyozas de verduras</h6>
+                <h6>Yakitori de pollo</h6>
+                <h6>Sushi de salmón y queso</h6>
+                <h6>Maki de pez mantequilla</h6>
+                <h6>Uramaki de queso de cabra</h6>
+                <h6>Nigiri de atún rojo</h6>
+                <h6>Surtido de mochis y café</h6>
+                <h5 class="precio-menu">35.00€</h5>
+                <p class="iva">IVA INCLUIDO</p>
+                <p class="bebida-incluida">BEBIDA INCLUIDA DURANTE LA COMIDA</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Menú Combinado
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="menu-body">
+                <h3 class="titulo-menu titulo">Menú Combinado</h3>
+                <h4 class="titulo-submenu-no-margen submenu">Entrantes</h4>
+                <p class="subtitulo">Para compartir cada 4 PAX</p>
+                <h6>Gyozas de pollo</h6>
+                <h6>Yakitori de cerdo</h6>
+                <h6>Uramaki de aguacate y atún</h6>
+                <h6>Nigiri de pez mantequilla</h6>
+                <h4 class="titulo-submenu submenu">Principal</h4>
+                <h6>Sushi de salmón y queso (4 ud)</h6>
+                <h6>Yakisoba vegetal / Katsudon de pollo</h6>
+                <h4 class="titulo-submenu submenu">Postre</h4>
+                <h6>Surtido de mochis y café</h6>
+                <h5 class="precio-menu">40.00€</h5>
+                <p class="iva">IVA INCLUIDO</p>
+                <p class="bebida-incluida">BEBIDA INCLUIDA DURANTE LA COMIDA</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      
+      </div>
+    </div>
+  </main>
+
+  <footer id="#footer">
+    <div class="text-center text-lg-start text-muted container-fluid seccionfoot">
+      <div
+        class="seccionfoot2 d-flex justify-content-center align-items-center justify-content-lg-between p-4 border-bottom">
+        <!-- Izquierda -->
+        <div class="me-5 d-none d-lg-block contactame-div">
+          <a href="reserva.html" target="_blank" class="reserva enlace">¡ RESERVA !</a>
+        </div>
+        <!-- Izquierda -->
+
+        <!-- Derecha -->
+          <div>
+            <a class="me-4 text-reset enlace" href="https://www.linkedin.com/in/roc%C3%ADo-finch-gonz%C3%A1lez" 
+              title="Linkedin" target="_blank"> <img class="icon" src="../media/img/index/LINKEDIN.png" alt="linkedin-icon"></a>
+            <a class="me-4 text-reset enlace" href="https://www.instagram.com/rocio.finch/" title="Instagram"
+              target="_blank"> <img class="icon" src="../media/img/index/IG.png" alt="ig-icon" title="Instagram"></a>
+            <a class="me-4 text-reset enlace" href="https://www.pinterest.es/RocioFinch/" title="Pinterest"
+              target="_blank"> <img class="icon" src="../media/img/index/PINTEREST.png" alt="pinterest-icon"
+                title="Pinterest"></a>
+          </div>
+          <!-- Derecha -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

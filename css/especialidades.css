@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.seccionfoot {
+  border-top: 1px solid black;
+}
+
+.background-especialidades {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background-image: url("../media/img/especialidades/fondo-especialidades2OSCURO2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#seccion {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#caption {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.white-background {
+  height: 200px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: hidden
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.alimento {
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.alimento:hover {
+  height: 220px;
+  width: auto;
+}
+
+.flecha {
+  padding: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.flecha-img {
+  height: 25px;
+  background: none;
+}
+
+.boton-invisible {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.fila-elementos{
+  display: flex;
+  justify-content: center;
+}
+
+.nombre-plato {
+  font-size: 1.3em;
+  text-align: left;
+  color: white;
+  font-weight: bolder;
+}
+
+.div-imagen {
+  display: flex;
+  justify-content: end;
+ padding-right: 20px;
+}
+
+.div-texto {
+  position: relative;
+  
+}
+
+.div-texto-abajo {
+  position: absolute;
+  bottom: 0;
+  margin-left: 20px;
+}
+
+.descripcion-plato {
+  font-size: 0.9em;
+  color: white;
+  text-align: left;
+  width: 90%;
+}
+
+.imagen-especialidad {
+  height: 250px;
+  border: 10px double black;
+  border-radius: 20px;
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #seccion {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2.2em;
+  }
+  
+  #caption {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  #caption2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9em; 
+  }
+
+  .background-especialidades {
+    height: 600px;
+  }
+
+  .imagen-especialidad {
+    height: 225px;
+    width: auto;
+  }
+
+  .white-background {
+    height: 150px;
+  }
+
+  .alimento {
+    height: 150px;
+    width: auto;
+  }
+
+  .alimento:hover {
+    height: 160px;
+  }
+
+  .div-imagen {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-texto-abajo {
+    position: relative;
+
+  }
+
+  .fila-elementos {
+    width: 80%;
+  }
+
+  .descripcion-plato {
+    width: 100%;
+ 
+  }
+
+  .nombre-plato {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .imagen-especialidad {
+    height: 150px;
+    width: auto;
+  }
+
+  .nombre-plato{
+    font-size: 1.2em;
+  }
+}

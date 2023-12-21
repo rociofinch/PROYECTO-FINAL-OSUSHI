@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+}
+
+.seccionfoot {
+  border-top: 1px solid black; 
+}
+
+.background-inicio {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-image: url("../media/img/inicio/WALL-PR-LR-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.sushi-paratodos {
+  height: 125px;
+  margin-top: 120px;
+  
+}
+
+.fila-elementos {
+  display: flex; 
+}
+
+.elemento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.muñeco {
+  height: 300px;
+}
+
+.oculto {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transition-duration: 1.5s;
+}
+
+.white-background {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.parrafo-presentacion {
+  margin-left: 30px;
+  font-size: 0.9em;
+  padding-top: 30px;
+}
+
+.container-cookies{
+  width: 80%;
+  margin: auto;
+}
+
+.subcontainer-cookies{
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+#cookies{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  font-size: 0.8em;
+  z-index: 1;
+}
+
+.cookies{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#btn-cookies{
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: none; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.cookies a{
+  color: red;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .fila-elementos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+ 
+  .sushi-paratodos {
+   height: 100px;
+   margin-top: 400px;  
+ }
+ 
+ .muñeco {
+   height: 200px;
+ }
+ 
+ .elemento {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 400px;
+ }
+ 
+ 
+ .background-inicio {
+   max-height: 400px;
+   min-width: 100%;
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .parrafo-cookies{
+  margin-top: 20px;
+}
+
+#btn-cookies{
+  margin-bottom: 20px;
+}
+
+ }
+
+@media only screen and (max-width: 768px) {
+
+  #seccion {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2.2em;
+  }
+  
+  #caption {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  #caption2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9em; 
+  }
+
+ .fila-elementos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .sushi-paratodos {
+  height: 100px;
+  margin-top: 400px;  
+}
+
+.muñeco {
+  height: 200px;
+}
+
+.elemento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+}
+
+
+.background-inicio {
+  max-height: 400px;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.background-inicio {
+  max-height: 300px;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.sushi-paratodos {
+  height: 70px;
+  margin-top: 300px;  
+}
+
+.muñeco {
+  height: 150px;
+}
+
+.elemento {
+  margin-top: 300px;
+}
+}
